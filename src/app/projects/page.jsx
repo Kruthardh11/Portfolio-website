@@ -51,6 +51,16 @@ const Projects = () => {
 
     </div>
   </div>
+  <div className="rounded-lg shadow-white overflow-hidden transition-transform duration-300 transform hover:scale-105  hover:bg-gradient-to-b hover:from-gray-900 hover:to-gray-800">
+    {/* <Image src={img} alt="Project" className="hidden sm:block w-full h-auto object-contain" /> */}
+    <div className="p-4">
+      <h3 className="text-xl text-white font-bold mb-2">ColdConnect </h3>
+      <p className="text-gray-300 mb-4">A one stop place to make your resume, generate cold mails, and search jobs</p>
+      {/* <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">Live Website</a> */}
+      {/* <a href="https://github.com/Kruthardh11/Image-Generator" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 sm:ml-10 hover:text-blue-800">Source code</a> */}
+        details coming up!!
+    </div>
+  </div>
 </div>
 
 
