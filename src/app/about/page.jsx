@@ -84,10 +84,9 @@ const About = () => {
         <div className="shadow-white sm:p-8 p-5 sm:mb-5 sm:mx-[10%] transition-transform duration-300 transform hover:scale-105">
           <div>
         <div className="bg-gradient-to-b from-green-500 to-blue-500  text-transparent bg-clip-text text-xl">Editorial Member, Otaku Club VIT: </div>
-         <p className="my-2">As an editorial member of the Otaku Club at 
-        VIT Vellore, I contribute to the club"s content creation, write articles,
-        and engage with fellow anime enthusiasts. This role has allowed me to combine my
-        passion for anime with my love for writing and communication skills. You can check out my blogs on our club"s medium page.</p>
+         <p className="my-2">
+          {" As an editorial member of the Otaku Club at VIT Vellore, I contribute to the club's content creation, write articles,and engage with fellow anime enthusiasts. This role has allowed me to combine mypassion for anime with my love for writing and communication skills. You can check out my blogs on our club's medium page. "}
+        </p>
         </div>
         <div>
           <div className="bg-gradient-to-b from-green-500 to-blue-500  text-transparent bg-clip-text text-xl">Open Source Contributions:</div>
