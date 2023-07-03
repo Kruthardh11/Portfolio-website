@@ -1,6 +1,6 @@
  "use client"
-import Link from 'next/link';
-import React, { useState } from 'react';
+import Link from "next/link";
+import React, { useState } from "react";
 
 const links = [
   {
@@ -31,25 +31,13 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
   return (
-    // <div className='h-100 flex  justify-between items-center px-10 py-10'>
-    //   <Link href="/" className='font-bold font-[22px]'>
-    //     Portfolio
-    //   </Link>
-    //   <div className='flex items-center gap-20  '>
-    //     {links.map((link) => (
-    //       <Link key={link.id} href={link.url} className='hover:text-green-500'>
-    //         {link.title}
-    //       </Link>
-    //     ))}
-    //   </div>
-    // </div>
-    <div className='h-100 flex justify-between items-center px-10 py-10'>
-    <Link href="/" className='font-bold font-[22px]'>
+    <div className= " h-100 flex justify-between items-center px-10 py-10">
+    <Link href="/" className="font-bold font-[22px]">
       Portfolio
     </Link>
-    <div className='flex items-center gap-20 md:hidden'>
+    <div className="flex items-center gap-20 md:hidden">
       <button
-        className='text-gray-500 hover:text-green-500'
+        className="text-gray-500 hover:text-green-500"
         onClick={() => setIsOpen(!isOpen)}
       >
         <svg
@@ -68,9 +56,9 @@ const Navbar = () => {
         </svg>
       </button>
       </div>
-      <div className={`flex sm:flex-row flex-col items-center gap-20 ${isOpen ? '' : 'hidden'} md:flex`}>
+      <div className={`flex sm:flex-row flex-col items-center gap-20 ${isOpen ? " " : "hidden"} md:flex`}>
         {links.map((link) => (
-          <Link key={link.id} href={link.url} className='hover:text-green-500'>
+          <Link key={link.id} href={link.url} className="hover:text-green-500">
             {link.title}
           </Link>
         ))}

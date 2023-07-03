@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react"
 import awa from "../public/awa.png"
 import frontchal from "../public/front-end-2.png";
 import blog from "../public/blog1.png";
-import img from '../public/imgg-1.png';
+import img from "../public/imgg-1.png";
 
-import Image from 'next/image'
+import Image from "next/image"
 
 const Projects = () => {
   return (
-    <div className='flex flex-col sm:px-[100px] p-6 pt-0'>
-       <h2 className='flex items-center justify-center bg-gradient-to-b from-green-500 to-blue-500 text-transparent bg-clip-text text-xl font-extrabold'>
-        <div className=' border-b-2 border-white'> Projects</div></h2>
+    <div className="flex flex-col sm:px-[100px] p-6 pt-0">
+       <h2 className="flex items-center justify-center bg-gradient-to-b from-green-500 to-blue-500 text-transparent bg-clip-text text-xl font-extrabold">
+        <div className=" border-b-2 border-white"> Projects</div></h2>
 
         <div className="grid grid-cols-2 gap-4 m-5">
   <div className="rounded-lg shadow-white overflow-hidden transition-transform duration-300 transform hover:scale-105 hover:bg-gradient-to-b hover:from-gray-900 hover:to-gray-800 ">
