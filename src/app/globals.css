@@ -2,26 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #111;
+  color : #bbb;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.theme{
+  transition: 1s all ease;
+}
+
+.light {
+  background-color: white;
+  color: #111;
+}
+
+.dark {
+  background: linear-gradient(to bottom, #000333, #000000);
+  height: 100%; /* Adjust the height as needed */
+}
+
+.container {
+  max-width: 1366px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} 
+
+.shadow-white {
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.font-one{
+  font-family: 'Roboto', sans-serif;
 }
